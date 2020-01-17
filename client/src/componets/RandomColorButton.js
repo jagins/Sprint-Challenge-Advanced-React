@@ -1,5 +1,6 @@
 import React from 'react';
 import {useRandomColor} from '../hooks/useRandomColor';
+import {randomColorGenerator} from '../utils/randomColor';
 
 function RandomColorButton()
 {
@@ -7,17 +8,13 @@ function RandomColorButton()
     const pickRandomColor = event =>
     {
         event.preventDefault();
-        let red = Math.floor(Math.random() * 256);
-        let green = Math.floor(Math.random() * 256);
-        let blue = Math.floor(Math.random() * 256)
-        let bgColor = "rgb(" + red + ","+ green + "," + blue + ")";
-        setRandomColor(bgColor);
+        setRandomColor(randomColorGenerator());
     }
 
     return(
         <div className='random-color'>
-            <button onClick={pickRandomColor}>Click Me!</button>
-            <input readOnly value={randomColor}/>
+            <button data-testid='random-color-btn' onClick={pickRandomColor}>Click Me!</button>
+            <input readOnly value={randomColor} placeholder='color will output here'/>
         </div>
     );
 }
