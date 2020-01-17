@@ -7,8 +7,11 @@ export const useRandomColor = (key, initialValue) =>
 
     useEffect(() =>
     {
-
-    }, [])
+        if(randomColor !== null)
+            document.body.style.background = randomColor;
+        else
+            document.body.style.background = "#FFFFFF";
+    }, [randomColor])
 
     return [randomColor, setRandomColor];
 }
