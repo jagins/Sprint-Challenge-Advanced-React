@@ -4,6 +4,13 @@ import './App.css';
 
 class App extends Component
 {
+  state = {
+    name: '',
+    country: '',
+    searches: '',
+    id: 0
+  };
+  
   render()
   {
     return(
