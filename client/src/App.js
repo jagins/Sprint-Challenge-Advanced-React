@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import PlayerCard from './componets/PlayerCard';
+import RandomColorButton from './componets/RandomColorButton';
 import './App.css';
 
 class App extends Component
@@ -31,6 +32,7 @@ class App extends Component
                       searches={player.searches}/>
           })}
         </div>
+          <RandomColorButton/>
       </div>
     );
   }
