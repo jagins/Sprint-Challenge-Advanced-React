@@ -8,7 +8,7 @@ function PlayerCard(props)
         <div className='player-card'>
             <h3>{name}</h3>
             <h3>{country}</h3>
-            <p>{searches}</p>
+            <p>Searches: {searches}</p>
         </div>
     );
 }

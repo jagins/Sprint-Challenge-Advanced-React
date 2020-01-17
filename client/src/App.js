@@ -22,6 +22,7 @@ class App extends Component
   {
     return(
       <div className='App'>
+        <h1>Sprint Challenge Advanced React</h1>
         <RandomColorButton/>
         <div className='card-container'>
           {this.state.playerCards.map(player =>

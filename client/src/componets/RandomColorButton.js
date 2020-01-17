@@ -13,7 +13,8 @@ function RandomColorButton()
 
     return(
         <div className='random-color'>
-            <button data-testid='random-color-btn' onClick={pickRandomColor}>Click Me!</button>
+            <h2>Click the button to change background color</h2>
+            <button data-testid='random-color-btn' onClick={pickRandomColor}>Click me!</button>
             <input readOnly value={randomColor} placeholder='color will output here'/>
         </div>
     );
