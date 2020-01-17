@@ -22,6 +22,7 @@ class App extends Component
   {
     return(
       <div className='App'>
+        <RandomColorButton/>
         <div className='card-container'>
           {this.state.playerCards.map(player =>
           {
@@ -32,7 +33,6 @@ class App extends Component
                       searches={player.searches}/>
           })}
         </div>
-          <RandomColorButton/>
       </div>
     );
   }
