@@ -1,6 +1,6 @@
 import React from 'react';
 import {useRandomColor} from '../hooks/useRandomColor';
-import {randomColorGenerator} from '../utils/randomColor';
+import {randomColorGenerator} from '../utils/randomColorGenerator';
 
 function RandomColorButton()
 {
