@@ -17,6 +17,7 @@ function RandomColorButton()
     return(
         <div className='random-color'>
             <button onClick={pickRandomColor}>Click Me!</button>
+            <input readOnly value={randomColor}/>
         </div>
     );
 }
