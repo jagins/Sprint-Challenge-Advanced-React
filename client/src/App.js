@@ -21,14 +21,16 @@ class App extends Component
   {
     return(
       <div className='App'>
-        {this.state.playerCards.map(player =>
-        {
-          return <PlayerCard
-                    key={player.id}
-                    country={player.country}
-                    name={player.name}
-                    searches={player.searches}/>
-        })}
+        <div className='card-container'>
+          {this.state.playerCards.map(player =>
+          {
+            return <PlayerCard
+                      key={player.id}
+                      country={player.country}
+                      name={player.name}
+                      searches={player.searches}/>
+          })}
+        </div>
       </div>
     );
   }
